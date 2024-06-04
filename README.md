@@ -25,3 +25,42 @@ Fórmula: (DT - DA) / Número de máquinas (NM)
 
 ![image](https://github.com/einstein808/trablhoFundTI/assets/79322072/9448d14d-a628-4013-8219-35780ed6a039)
 
+###Diagrama do modelo dimensional para cada indicador
+**Indicador 1:** Percentual de máquinas alocadas por unidade
+**Fato: Maquinas**
+Medida: Contagem de máquinas
+Dimensões:
+Unidade
+UnidadeID
+NomeUnidade
+Localizacao
+**Indicador 2:** Percentual de usuários com Office atualizado
+Fato: Usuarios
+Medida: Contagem de usuários com Office atualizado
+Dimensões:
+Usuario
+UsuarioID
+NomeUsuario
+Email
+UnidadeID
+Office
+OfficeID
+NomeOffice
+Versao
+MaquinaID
+Ano
+**Indicador 3:** Distribuição de tipos de máquinas por unidade
+Fato: Maquinas
+Medida: Contagem de máquinas por tipo
+Dimensões:
+Unidade
+UnidadeID
+NomeUnidade
+Localizacao
+Maquina
+MaquinaID
+NomeMaquina
+Tipo
+UsuarioID
+SerialMaquina
+
