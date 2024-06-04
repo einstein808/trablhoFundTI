@@ -25,7 +25,7 @@ Fórmula: (DT - DA) / Número de máquinas (NM)
 
 ![image](https://github.com/einstein808/trablhoFundTI/assets/79322072/9448d14d-a628-4013-8219-35780ed6a039)
 
-###Diagrama do modelo dimensional para cada indicador
+### Diagrama do modelo dimensional para cada indicador
 **Indicador 1:** Percentual de máquinas alocadas por unidade
 **Fato: Maquinas**
 Medida: Contagem de máquinas
