@@ -74,6 +74,7 @@ Dimensões:
 * UsuarioID
 * SerialMaquina
 
+**1. Percentual de Máquinas Alocadas por Unidade**
 ```text
 ┌──────────────┐
 │  dim_unidade │
@@ -105,6 +106,42 @@ Dimensões:
 │ id_unidade (FK)│
 │ serial_maquina │
 └───────────────┘
+```
+**2. Percentual de Usuários com Office Atualizado**
+```text
+┌──────────────┐
+│  dim_unidade │
+│──────────────│
+│ id_unidade   │
+│ nm_unidade   │
+│ localizacao  │
+└─────┬────────┘
+      │
+      │
+      ▼
+┌─────────────────┐
+│  fato_office    │
+│─────────────────│
+│ id_office       │
+│ nm_office       │
+│ versao          │
+│ id_maquina (FK) │
+│ ano             │
+└─────┬───────────┘
+      │
+      │
+      ▼
+┌───────────────┐
+│  dim_maquina  │
+│───────────────│
+│ id_maquina    │
+│ nm_maquina    │
+│ tp_maquina    │
+│ id_usuario (FK)│
+│ id_unidade (FK)│
+│ serial_maquina │
+└───────────────┘
+
 ```
 
 
