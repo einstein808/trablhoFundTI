@@ -143,5 +143,37 @@ Dimensões:
 └───────────────┘
 
 ```
+**3. Distribuição de Tipos de Máquinas por Unidade**
+```text
+┌──────────────┐
+│  dim_unidade │
+│──────────────│
+│ id_unidade   │
+│ nm_unidade   │
+│ localizacao  │
+└─────┬────────┘
+      │
+      │
+      ▼
+┌─────────────────┐
+│  fato_maquinas  │
+│─────────────────│
+│ id_maquina (FK) │
+│ id_unidade (FK) │
+│ id_tempo (FK)   │
+└─────┬───────────┘
+      │
+      │
+      ▼
+┌───────────────┐
+│  dim_maquina  │
+│───────────────│
+│ id_maquina    │
+│ nm_maquina    │
+│ tp_maquina    │
+│ id_usuario (FK)│
+│ id_unidade (FK)│
+│ serial_maquina │
+└───────────────┘
 
-
+```
