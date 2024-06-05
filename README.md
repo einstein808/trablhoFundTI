@@ -74,6 +74,37 @@ Dimensões:
 * UsuarioID
 * SerialMaquina
 
-![image](https://github.com/einstein808/trablhoFundTI/assets/79322072/9b258973-2619-4220-a0e5-c6369a71ca5d)
+``
+┌──────────────┐
+│  dim_unidade │
+│──────────────│
+│ id_unidade   │
+│ nm_unidade   │
+│ localizacao  │
+└─────┬────────┘
+      │
+      │
+      ▼
+┌─────────────────┐
+│  fato_maquinas  │
+│─────────────────│
+│ id_maquina (FK) │
+│ id_unidade (FK) │
+│ id_tempo (FK)   │
+└─────┬───────────┘
+      │
+      │
+      ▼
+┌───────────────┐
+│  dim_maquina  │
+│───────────────│
+│ id_maquina    │
+│ nm_maquina    │
+│ tp_maquina    │
+│ id_usuario (FK)│
+│ id_unidade (FK)│
+│ serial_maquina │
+└───────────────┘
+``
 
 
