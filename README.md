@@ -74,7 +74,7 @@ Dimensões:
 * UsuarioID
 * SerialMaquina
 
-``
+```text
 ┌──────────────┐
 │  dim_unidade │
 │──────────────│
@@ -105,6 +105,6 @@ Dimensões:
 │ id_unidade (FK)│
 │ serial_maquina │
 └───────────────┘
-``
+```
 
 
